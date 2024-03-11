@@ -1,0 +1,36 @@
+.pie{
+    color: rgb(81, 14, 83);
+}
+footer{
+    background-color: rgb(243, 221, 246);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10;
+}
+
+h1 {
+    color: rgb(198, 93, 127);
+    text-align: center;
+        -webkit-text-stroke-width: 2px; 
+        -webkit-text-stroke-color: black;
+        font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .pindex {
+    text-align: justify;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 14;
+  }
+  
+  img {
+    border-radius: 20px;
+  }
+  
+  .img3 {
+    border-radius: 40px;
+  }
+  .video {
+    text-align: center;
+  }
+
+
+  
