@@ -7,6 +7,11 @@ footer{
     font-size: 10;
 }
 
+li{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 10;
+}
+
 h1 {
     color: rgb(198, 93, 127);
     text-align: center;
@@ -20,18 +25,16 @@ h1 {
     font-family:'Courier New', Courier, monospace;
     font-size: 14;
   }
-  
-  img {
-    border-radius: 20px;
-  }
-  
-  .img3 {
-    border-radius: 40px;
-  }
-  .video {
-    text-align: center;
-  }
 
+  p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12;
+  }
+  table{
+    align-self: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14;
+  }
 
   .gallery-block{
     padding-bottom: 60px;

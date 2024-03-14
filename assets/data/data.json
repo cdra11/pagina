@@ -1,3 +1,16 @@
 {
-  "carrito": []
+  "carrito": [
+    {
+      "id": "5",
+      "producto": "Alas de hierro",
+      "precio": 48,
+      "cantidad": 2
+    },
+    {
+      "id": "4",
+      "producto": "Alas de sangre",
+      "precio": 42,
+      "cantidad": 1
+    }
+  ]
 }
