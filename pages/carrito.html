@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/script/script.js"></script>
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="/index.html">Home</a></li>
+                <li><a class="dropdown-item" href="/pages/carrito.html">Carrito</a></li>
+                <li><a class="dropdown-item" href="/pages/facturacion.html">Facturación</a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="row">
+        <section class="col-md-5">
+            <div>
+                <button id="pinkfloyd" onclick="agregarProductos('1','Pink floyd',38)" class="btn btn-success">
+                    <img src="" alt="" class="btnCarrito">pink floyd- 38</button>
+                <button id="nirvana" onclick="agregarProductos('2','Nirvana',45)" class="btn btn-success">nirvana-
+                    45</button>
+                <button id="Frusciante" onclick="agregarProductos('3','Frusciante',65)"
+                    class="btn btn-success">Frusciante-
+                    65</button>
+            </div>
+            <div>
+                <button id="pinkfloyd" onclick="agregarProductos('4','La Renga',42)" class="btn btn-success">La Renga-
+                    42</button>
+                <button id="nirvana" onclick="agregarProductos('5','Megadeth',28)" class="btn btn-success">Megadeth-
+                    28</button>
+                <button id="Frusciante" onclick="agregarProductos('6','Metalica',59)" class="btn btn-success">Metallica-
+                    59</button>
+            </div>
+        </section>
+        <section class="col-md-7">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Producto</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Precio/u</th>
+                        <th scope="col">Total</th>
+                        <th scope="col">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>Total</th>
+                        <th></th>
+                        <th></th>
+                        <td id="total">0.00</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+    <footer>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

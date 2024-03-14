@@ -4,11 +4,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Compact Gallery</title>
+    <title>Productos</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
     <link rel="stylesheet" href="/styles/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script src="/script/script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
 </head>
 <body class="container">
     <header>
@@ -65,19 +68,20 @@
             <div class="row no-gutters">
                 <div class="col-md-6 col-lg-4 item zoom-on-hover">
                     <a class="lightbox" href="/images/libro1.jpg">
+                        
                         <img class="img-fluid image" src="/images/libro1.jpg">
                         <span class="description">
                             <span class="description-heading">La quimica del amor - Ali Hazelwood</span>
                             <span class="description-body">$32 - Una nueva comedia romántica situada en la NASA en la que una científica se ve obligada a trabajar en un proyecto junto a su archienemigo... con resultados explosivos.
-
                                 Bee Königswasser se rige siempre por un código muy sencillo: ¿qué haría Marie Curie? Si la NASA le ofreciera liderar un proyecto de neuroingeniería, un sueño hecho realidad después de pasarse años malviviendo con las migajas del mundo académico, Marie aceptaría sin dudarlo. Obvio. Pero la madre de la física moderna nunca tuvo que codirigir ningún proyecto con Levi Ward.
-                                
                                 A ver, Levi no está nada mal: es alto, moreno y tiene una mirada de lo más penetrante. Pero Levi dejó muy claros sus sentimientos por Bee en la universidad: es mejor que dos enemigos trabajen cada uno en su propia galaxia muy muy lejana.
-                                
                                 De pronto, Bee se encuentra con que su material ha desaparecido, el personal pasa de ella y su maltrecha carrera profesional pende de un hilo. Puede que su lóbulo occipital esté jugándole una mala pasada, pero juraría que Levi empieza a convertirse en su aliado, apoyando sus decisiones, secundando sus ideas... devorándola con esa mirada suya. Y las diferentes posibilidades traen a sus neuronas de cabeza.
-                                
-                                Sin embargo, cuando llega el momento de jugársela y arriesgar el corazón, solo hay una pregunta que importe: ¿Qué hará Bee Königswasser?</span>
-                        </span>
+                                Sin embargo, cuando llega el momento de jugársela y arriesgar el corazón, solo hay una pregunta que importe: ¿Qué hará Bee Königswasser?
+                                <br>
+                                <button id="libro1" onclick="agregarProductos('1','La química del amor',32)" class="btn btn-success">
+                                    Agregar </button>
+                                </span>
+                            </span>
                     </a>
                 </div>
                 <div class="col-md-6 col-lg-4 item zoom-on-hover">
@@ -86,11 +90,13 @@
                         <span class="description">
                             <span class="description-heading">La teoría del amor - Ali Hazelwood</span>
                             <span class="description-body">$28 - Las múltiples vidas de la física teórica Elsie Hannaway han acabado atrapándola. De día es profesora adjunta. Se afana en corregir exámenes y enseñar termodinámica con la esperanza de, algún día, conseguir la titularidad. De noche, complementa su inexistente sueldo ofreciendo el servicio de ser una novia falsa, lo cual lleva a cabo con éxito gracias a sus habilidades para caerle bien a la gente y encarnar cualquier versión de sí misma que necesite el cliente.
-
                                 Lo cierto es que es un trabajo estupendo... hasta que el Elsie-verso que tanto le ha costado construir se viene abajo. Jack Smith, el hermano arrogante e irritantemente atractivo de su cliente favorito, resulta ser el físico experimentalista sin corazón que arruinó la carrera de su mentor y minó la reputación de los teóricos a nivel mundial. Y ese mismo Jack Smith, que es quien dirige el departamento de Física del MIT, se interpone ahora entre Elsie y el trabajo de sus sueños.
-                                
                                 Ella está dispuesta a poner en marcha una guerra de sabotaje académico, pero... ¿qué son esas miradas tan largas y penetrantes? ¿Cómo es que, cuando está con él, no tiene que ser una versión diferente de sí misma? ¿Caer en la órbita de un experimentalista conseguirá que, por fin, ponga en práctica todas sus teorías sobre el amor?</span>
-                        </span>
+                                <br>
+
+                                <button id="libro2" onclick="agregarProductos('2','La teoría del amor',28)" class="btn btn-success">
+                                    Agregar </button>
+                            </span>
                     </a>
                 </div>
                 <div class="col-md-6 col-lg-4 item zoom-on-hover">
@@ -101,7 +107,10 @@
                             <span class="description-body">$29 - Una relación falsa entre dos científicos se topa con la irresistible fuerza de la atracción Olive Smith es una doctoranda de tercer año que no cree en las relaciones amorosas duraderas, pero su mejor amiga, Ahn, sí, y por eso Olive se ha metido en un lío monumental. A Ahn le gusta el exnovio de Olive, pero jamás daría el primer paso porque es una buena amiga.
                                 Convencerla de que ha pasado página y de que está construyendo su «fueron felices y comieron perdices» no va a resultarle nada fácil a Olive, puesto que los científicos necesitan pruebas. Por eso, como cualquier mujer con un mínimo de amor propio, se deja llevar por el pánico y besa al primer hombre con el que se encuentra para que Ahn la vea. Ese hombre es nada más y nada menos que Adam Carlsen, un joven profesor tan reputado por la calidad de su trabajo como por su imbecilidad. Así que Olive se queda de piedra cuando Carlsen accede a mantener su farsa en secreto y ser su novio falso.
                                 Sin embargo, después de que un importante congreso científico se convierta en un desastre y Adam vuelva a sorprenderla con su apoyo inquebrantable (y sus inquebrantables abdominales), su pequeño experimento se acerca peligrosamente al punto de combustión. Olive no tarda en descubrir que la única cosa más complicada que una hipótesis sobre el amor es analizar su propio corazón bajo el microscopio.</span>
-                        </span>
+                                <br>
+                                <button id="libro3" onclick="agregarProductos('3','La hipótesis del amor',32)" class="btn btn-success">
+                                    Agregar </button>    
+                            </span>
                     </a>
                 </div>
                 <div class="col-md-6 col-lg-4 item zoom-on-hover">
@@ -111,15 +120,15 @@
                             <span class="description-heading">Alas de sangre - Rebecca Yarros</span>
                             <span class="description-body">$42 - Un dragón sin su jinete es una tragedia. Un jinete sin su dragón está muerto.
                                 —Artículo uno, sección uno del Código de jinetes de dragones
-                                
                                 Violet Sorrengail creía que a sus veinte años se uniría al Cuadrante de los Escribas para vivir una vida tranquila, estudiando sus amados libros y las historias antiguas que tanto le fascinan. Sin embargo, por órdenes de su madre, la temida comandante general, Violet debe unirse a los miles de candidatos que luchan por formar parte de la élite de Navarre: los jinetes de dragones.
-                                
                                 Cuando eres más pequeña y frágil que los demás tu vida corre peligro, porque los dragones no se vinculan con humanos débiles; de hecho, los incineran. Sumado a esto, con más jinetes que dragones disponibles, buena parte de los candidatos mataría a Violet con tal de mejorar sus probabilidades de éxito; otros, como el despiadado Xaden Riorson, el líder de ala más poderoso del Cuadrante, la asesinarían simplemente por ser la hija de la comandante general. Para sobrevivir, necesitará aprovechar al máximo todo su ingenio.
-                                
                                 Día tras día, la guerra que se libra al exterior del Colegio se torna más letal, las defensas del reino se debilitan y los muertos aumentan. Por si fuera poco, Violet sospecha que los líderes de Navarre esconden un terrible secreto.
-                                
                                 Amistad, rivalidad y pasión... en el Colegio de Guerra de Basgiath todos tienen una agenda oculta y saben que una vez adentro solo hay dos posibilidades: graduarse o morir.</span>
-                        </span>
+                                <br>
+
+                                <button id="libro4" onclick="agregarProductos('4','Alas de sangre',42)" class="btn btn-success">
+                                    Agregar </button>
+                            </span>
                         </a>
                     </div>
                 <div class="col-md-6 col-lg-4 item zoom-on-hover">
@@ -128,15 +137,15 @@
                         <span class="description">
                             <span class="description-heading">Alas de Hierro - Rebecca Yarros</span>
                             <span class="description-body">$48 - «En el primer año algunos pierden la vida. En el segundo año, los que sobrevivimos perdemos la compasión».—Xaden Riorson
-
                                 Todos esperaban que Violet Sorrengail muriera en su primer año en el Colegio de Guerra de Basgiath, incluso ella misma. Pero la Trilla fue tan solo la primera de una serie de pruebas imposibles destinadas a deshacerse de los pusilánimes, los indignos y los desafortunados.
-                                
                                 Ahora comienza el verdadero entrenamiento y Violet no sabe cómo logrará superarlo. No solo porque es brutal y agotador ni porque está diseñado para llevar al límite el umbral del dolor de los jinetes, sino porque el nuevo vicecomandante está empeñado en demostrar a Violet lo débil que es a menos que traicione al hombre que ama.
-                                
                                 Aunque el cuerpo de Violet es más frágil que el de sus compañeros, su fuerza radica en su ingenio y voluntad de hierro. Además, los líderes están olvidando la lección más importante que Basgiath les ha enseñado: los jinetes de dragones crean sus propias reglas.
-                                
                                 La voluntad de sobrevivir no será suficiente este año, porque Violet conoce el secreto que se oculta entre los muros del colegio y nada, ni siquiera el fuego de dragón, será suficiente para salvarlos.</span>
-                        </span>
+                                <br>
+
+                                <button id="libro5" onclick="agregarProductos('5','Alas de hierro',48)" class="btn btn-success">
+                                    Agregar </button>
+                            </span>
                     </a>
                 </div>
                 <div class="col-md-6 col-lg-4 item zoom-on-hover">
@@ -145,17 +154,43 @@
                         <span class="description">
                             <span class="description-heading">Lo que la nieve susurra al caer - María Martínez</span>
                             <span class="description-body">$25 - ¿Y si para seguir adelante tuvieras que retroceder al punto donde todo comenzó?
-
                                 Para Hunter, la música es mucho más que un conjunto de notas dando forma a una melodía. Las canciones que compone son un refugio. Acordes que hablan de sueños y miedos. De ganas y carencias. Compases que iluminan las sombras del frío y solitario mundo en el que ha crecido. Musas que han transformado su pasado en un presente brillante.Sin embargo, esa inspiración enmudece cuando encuentra una carta manuscrita en su buzón, que lo obliga a cuestionarse todo lo que sabe sobre sí mismo.
-                                
                                 La vida de Willow se ha convertido en una caja de momentos desordenados y sueños frustrados. Siente que ha perdido su lugar en el mundo y ya no recuerda a esa persona que siempre quiso ser.
-                                
                                 Mientras la nieve cae silenciosa, Hunter y Willow descubrirán que el destino no siempre tiene la última palabra y que los momentos, buenos o malos, nos van convirtiendo en todo lo que somos. Que a veces basta con escuchar al corazón para encontrarse a uno mismo. Y que hay amores de invierno, capaces de sobrevivir al deshielo y convertirse en canciones eternas.</span>
-                        </span>
+                                <br>
+
+                                <button id="libro1" onclick="agregarProductos('6','Lo que la nieve susurra al caer',25)" class="btn btn-success">
+                                    Agregar </button>
+                            </span>
                     </a>
                 </div>
             </div>
         </div>
+        <br>
+        <br>
+        <section>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Producto</th>
+                    <th scope="col">Cantidad</th>
+                    <th scope="col">Precio/u</th>
+                    <th scope="col">Total</th>
+                    <th scope="col">Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Total</th>
+                    <th></th>
+                    <th></th>
+                    <td id="total">0.00</td>
+                </tr>
+            </tfoot>
+        </table>
+        </section>
     </section>
 </main>
 <footer>
